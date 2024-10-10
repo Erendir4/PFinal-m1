@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESVOSTUDIO</title>
+  <style>
+    body {
+      font-family: 'Century Gothic', sans-serif;
+      background-color: #fdf2ea;
+    }
+    header {
+      background-color: #5ed9dc;
+      padding: 50px;
+      text-align: center;
+    }
+    header h1 {
+      font-weight: bold;
+      color: #4e4e4e;
+    }
+    header h2 {
+      color: #ffffff;
+    }
+    #carrusel {
+      width: 80%;
+      margin: 40px auto;
+    }
+    #carrusel img {
+      width: 100%;
+      height: 200px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    #servicios {
+      margin: 40px;
+    }
+    #servicios h2 {
+      color: #999999;
+    }
+    #servicios ol, #servicios ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    #servicios li {
+      margin: 10px;
+    }
+    #contacto {
+      margin: 40px;
+    }
+    #contacto h2 {
+      color: #999999;
+    }
+    #contacto form {
+      margin: 20px;
+    }
+    #contacto label {
+      display: block;
+      margin: 10px;
+    }
+    #contacto input, #contacto textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #ccc;
+    }
+    footer {
+      background-color: #5ed9dc;
+      padding: 10px;
+      text-align: center;
+      color: #ffffff;
+    }
+    /* Estilos responsivos */
+    @media (max-width: 768px) {
+      #carrusel {
+        width: 90%;
+      }
+      #servicios {
+        margin: 20px;
+      }
+      #contacto {
+        margin: 20px;
+      }
+    }
+    @media (max-width: 480px) {
+      #carrusel {
+        width: 100%;
+      }
+      #servicios {
+        margin: 10px;
+      }
+      #contacto {
+        margin: 10px;
+      }
+      #contacto form {
+        margin: 10px;
+      }
+    }
+    @media (max-width: 320px) {
+      #carrusel img {
+        height: 150px;
+      }
+      #servicios h2 {
+        font-size: 18px;
+      }
+      #contacto h2 {
+        font-size: 18px;
+      }
+    }
+    /* Estilos para el carrusel */
+    .carrusel {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .carrusel img {
+      width: 300px;
+      height: 300px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ESVO STUDIO</h1>
+    <h2>Personalizated clothes</h2>
+  </header>
+  <div class="carrusel">
+    <img src="p1.jpeg" alt="Imagen 1">
+    <img src="p2.jpeg" alt="Imagen 2">
+    <img src="p3.jpeg" alt="Imagen 3">
+    <img src="p4.jpeg" alt="Imagen 4">
+  </div>
+  <section id="servicios">
+    <h2>Impresión</h2>
+    <ol>
+      <li>Serigrafía</li>
+      <li>DTF</li>
+      <li>Vinil</li>
+    </ol>
+    <h2>Telas</h2>
+    <ol>
+      <li>Algodón</li>
+      <li>Poliester</li>
+      <li>Dry Fit</li>
+    </ol>
+  </section>
+  <section id="contacto">
+    <h2>Formulario de contacto</h2>
+    <form width="10"> 
+      <label for="nombre">Nombre:</label> 
+      <input style="width: 400px;height: 20px;" type="text" id="nombre" name="nombre"><br><br>
+      <label for="correo">Correo electrónico:</label>
+      <input style="width: 400px;height: 20px;" type="email" id="correo" name="correo"><br><br>
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje"></textarea><br><br>
+      <input style="width: 100px;height: 30px;" type="submit" value="Enviar">
+    </form>
+  </section>
+  <nav>
+    <ul>
+      <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+      <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+      <li><a href="https://www.instagram.com/esvo.studio?igsh=MTI1eXVjOXFrczAwcQ==" target="_blank">Instagram</a></li>
+    </ul>
+  </nav>
+  <footer>
+    <p>&copy; 2024 Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
